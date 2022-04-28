@@ -12,7 +12,7 @@ run() {
     else
         internet=0
     fi
-    if [[ "$internet" != "$prev" ]]; then
+    if [[ "$internet" != "$prev" || "$RANDOM" -le 1000 ]]; then
         echo "$(date +%s),$internet" >>"$OUTPUT_FILE"
         echo "$(date): $internet"
     else
