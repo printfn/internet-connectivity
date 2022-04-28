@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 OUTPUT_FILE="/public/internet-log.csv"
+
+prev=unknown
 
 run() {
     sleep 1
@@ -9,8 +12,13 @@ run() {
     else
         internet=0
     fi
-    echo "$(date +%s),$internet" >>"$OUTPUT_FILE"
-    echo "$(date): $internet"
+    if [[ "$internet" != "$prev" ]]; then
+        echo "$(date +%s),$internet" >>"$OUTPUT_FILE"
+        echo "$(date): $internet"
+    else
+        echo "unchanged: $(date): $internet"
+    fi
+    prev="$internet"
 }
 
 while :; do
