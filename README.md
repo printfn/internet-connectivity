@@ -55,3 +55,13 @@ Notes:
     running `tmux`, then start the script, followed by Ctrl-b, d to detach.
 * to get Unix timestamps to work in Grafana, you need to use the "Transform" menu.
     Use "Add field from calculation" with a "Binary operation" to multiply, followed by a "Convert field type" to make it a "Time" field.
+
+## References
+
+* <https://marcus.se.net/grafana-csv-datasource/>
+* <https://stackoverflow.com/questions/921398/exit-status-of-ping-command>
+* <https://github.com/grafana/grafana/issues/24917>
+* <https://github.com/grafana/grafana/issues/6297>
+* <https://community.grafana.com/t/how-to-configure-default-home-dashboard-path/41661>
+* <https://grafana.com/docs/grafana/v7.5/administration/preferences/change-home-dashboard/>
+* <https://www.reddit.com/r/grafana/comments/lm1y9k/how_do_i_give_grafana_access_to_local_csv_file_if/>
