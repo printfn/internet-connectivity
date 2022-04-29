@@ -279,13 +279,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-24h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "Main",
   "uid": "dt7Mtlw7k",
-  "version": 15,
+  "version": 16,
   "weekStart": ""
 }
