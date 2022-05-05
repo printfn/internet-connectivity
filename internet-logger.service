@@ -1,0 +1,9 @@
+[Unit]
+Requires=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=
+ExecStart=/home/pi/Code/internet-connectivity/internet.sh
